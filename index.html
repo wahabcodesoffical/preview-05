@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C.T Build It — Building &amp; Renovation | Birmingham</title>
+  <meta name="description" content="C.T Build It — home renovations, extensions, kitchen & bathroom fitting across Birmingham and the West Midlands. Call 07938 883718 for a free quote.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Demo banner -->
+  <div class="demo-banner" role="note" aria-label="Demo disclaimer">
+    <span class="demo-banner__pill">DEMO</span>
+    <p>Unofficial website redesign concept — created by <strong>Wahab&nbsp;Codes</strong></p>
+  </div>
+
+  <!-- Sticky nav -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="C.T Build It — home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="30" height="30" fill="none">
+            <rect x="3" y="14" width="26" height="15" rx="1.5" fill="#f5a623"/>
+            <path d="M3 14 16 4l13 10" stroke="#f5f5f0" stroke-width="3" stroke-linejoin="round" fill="none"/>
+            <rect x="13" y="20" width="6" height="9" fill="#1c1e22"/>
+          </svg>
+        </span>
+        <span class="brand__text">C.T<small>BUILD IT</small></span>
+      </a>
+
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why">Why Us</a></li>
+          <li><a href="#areas">Areas</a></li>
+          <li><a href="#quote">Contact</a></li>
+        </ul>
+        <a class="btn btn--call" href="tel:+447938883718">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9Z"/></svg>
+          07938 883718
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true">
+        <img class="hero__photo" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80" alt="Builders at work on a construction site" fetchpriority="high">
+        <span class="hero__overlay"></span>
+      </div>
+
+      <div class="container hero__inner">
+        <p class="eyebrow" data-hero>Building &amp; Renovation — Birmingham, UK</p>
+        <h1 id="hero-title" data-hero>Built properly.<br><span class="accent">Finished beautifully.</span></h1>
+        <p class="hero__sub" data-hero>
+          C.T Build It takes on home renovations, extensions, kitchens and bathrooms
+          across Birmingham and the West Midlands — tidy sites, honest quotes,
+          and workmanship that lasts.
+        </p>
+        <div class="hero__ctas" data-hero>
+          <a class="btn btn--primary btn--lg" href="#quote">Get a Free Quote</a>
+          <a class="btn btn--ghost btn--lg" href="tel:+447938883718">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9Z"/></svg>
+            Call 07938 883718
+          </a>
+        </div>
+        <p class="hero__note" data-hero>Based in Birmingham · Serving the West Midlands · Free quotes</p>
+      </div>
+    </section>
+
+    <!-- Marquee band -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Renovations</span><span class="marquee__dot">◆</span>
+        <span>Extensions</span><span class="marquee__dot">◆</span>
+        <span>Kitchens</span><span class="marquee__dot">◆</span>
+        <span>Bathrooms</span><span class="marquee__dot">◆</span>
+        <span>Plastering</span><span class="marquee__dot">◆</span>
+        <span>Repairs</span><span class="marquee__dot">◆</span>
+        <span>Renovations</span><span class="marquee__dot">◆</span>
+        <span>Extensions</span><span class="marquee__dot">◆</span>
+        <span>Kitchens</span><span class="marquee__dot">◆</span>
+        <span>Bathrooms</span><span class="marquee__dot">◆</span>
+        <span>Plastering</span><span class="marquee__dot">◆</span>
+        <span>Repairs</span><span class="marquee__dot">◆</span>
+      </div>
+    </div>
+
+    <!-- Trust strip -->
+    <section class="trust" id="trust" aria-label="Highlights">
+      <div class="container trust__inner">
+        <div class="trust__item" data-reveal>
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Based in Birmingham</span>
+        </div>
+        <div class="trust__item" data-reveal>
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m12 2 9 5-9 5-9-5 9-5Z"/><path d="m3 12 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg>
+          <span>Building &amp; Renovation</span>
+        </div>
+        <div class="trust__item" data-reveal>
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+          <span>Tidy, reliable sites</span>
+        </div>
+        <div class="trust__item" data-reveal>
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M9 21v-6h6v6"/></svg>
+          <span>Free, honest quotes</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <p class="eyebrow eyebrow--dark">What we do</p>
+          <h2 id="services-title">One team for the <span class="accent">whole job.</span></h2>
+          <p class="section__lede">From a single room refresh to a full extension — one point of contact, one tidy site, one finish you're proud of.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card" data-reveal>
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=800&q=80" alt="Beautifully renovated living room with modern styling" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>Home Renovations</h3>
+              <p>Full or partial renovations that transform tired spaces — planned around how you actually live, finished to a standard you'll notice.</p>
+              <ul>
+                <li>Whole-house refurbishments</li>
+                <li>Single-room transformations</li>
+                <li>Structural alterations</li>
+              </ul>
+              <a class="card__link" href="#quote">Discuss a renovation <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="card" data-reveal>
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?auto=format&fit=crop&w=800&q=80" alt="Residential houses with well-built extensions" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>Extensions</h3>
+              <p>Need more room? We build single and double-storey extensions that blend with your home and add real, lasting value.</p>
+              <ul>
+                <li>Single &amp; double-storey builds</li>
+                <li>Garage conversions</li>
+                <li>Open-plan kitchen-diners</li>
+              </ul>
+              <a class="card__link" href="#quote">Plan an extension <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="card" data-reveal>
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=800&q=80" alt="Modern fitted kitchen with island and wooden stools" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>Kitchen Fitting</h3>
+              <p>Kitchens fitted with care — from rip-out to tiling, plumbing to electrics coordination, all handled by one team.</p>
+              <ul>
+                <li>Full kitchen installations</li>
+                <li>Worktops, tiling &amp; flooring</li>
+                <li>Plumbing &amp; electrics coordinated</li>
+              </ul>
+              <a class="card__link" href="#quote">Design your kitchen <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="card" data-reveal>
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=800&q=80" alt="Neatly fitted bathroom storage cabinet" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>Bathroom Fitting</h3>
+              <p>Bathrooms done properly — watertight, well-ventilated and easy to keep clean, with fittings that suit your space.</p>
+              <ul>
+                <li>Full bathroom refits</li>
+                <li>Showers, suites &amp; tiling</li>
+                <li>Wet rooms &amp; en-suites</li>
+              </ul>
+              <a class="card__link" href="#quote">Refit your bathroom <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="card" data-reveal>
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Freshly decorated modern living space" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>Plastering &amp; Painting</h3>
+              <p>Smooth walls, crisp lines. Skimming, plaster repairs and full decorating for a flawless finish inside and out.</p>
+              <ul>
+                <li>Plaster skimming &amp; repairs</li>
+                <li>Interior &amp; exterior painting</li>
+                <li>Coving &amp; finishing touches</li>
+              </ul>
+              <a class="card__link" href="#quote">Freshen up a room <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="card" data-reveal>
+            <div class="card__media">
+              <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Well-kept home interior after repair work" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>General Repairs</h3>
+              <p>The small jobs that never get done — fixed. Brickwork, joinery touch-ups, leaks and wear, sorted without fuss.</p>
+              <ul>
+                <li>Brickwork &amp; pointing</li>
+                <li>Joinery &amp; carpentry fixes</li>
+                <li>Ongoing maintenance</li>
+              </ul>
+              <a class="card__link" href="#quote">Book a repair <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why us -->
+    <section class="section why" id="why" aria-labelledby="why-title">
+      <div class="container why__inner">
+        <figure class="why__media" data-reveal>
+          <img src="https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?auto=format&fit=crop&w=900&q=80" alt="Tower cranes over a large construction project" loading="lazy">
+          <span class="why__caption">Big-job capability, personal service</span>
+        </figure>
+        <div class="why__copy" data-reveal>
+          <p class="eyebrow eyebrow--dark">Why C.T Build It</p>
+          <h2 id="why-title">Builders you'd <span class="accent">recommend.</span></h2>
+          <p>No disappearing acts, no surprise extras. Just straightforward building work, communicated clearly from quote to clean-up.</p>
+          <ul class="why__list">
+            <li>
+              <span class="why__icon" aria-hidden="true">✓</span>
+              <div><strong>One team, start to finish</strong><span>Renovation, extension or refit — the same crew throughout, so nothing gets lost between trades.</span></div>
+            </li>
+            <li>
+              <span class="why__icon" aria-hidden="true">✓</span>
+              <div><strong>Honest, itemised quotes</strong><span>You approve the price before we lift a tool. If plans change, you hear it from us first.</span></div>
+            </li>
+            <li>
+              <span class="why__icon" aria-hidden="true">✓</span>
+              <div><strong>Tidy, respectful sites</strong><span>Dust sheets down, rubbish cleared daily — your home treated like our own.</span></div>
+            </li>
+            <li>
+              <span class="why__icon" aria-hidden="true">✓</span>
+              <div><strong>Finish that lasts</strong><span>We'd rather do it right than do it twice. Proper prep, proper materials, proper job.</span></div>
+            </li>
+          </ul>
+          <a class="btn btn--primary" href="tel:+447938883718">Call 07938 883718</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section process" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section__head section__head--center" data-reveal>
+          <p class="eyebrow eyebrow--dark">How it works</p>
+          <h2 id="process-title">Straightforward, <span class="accent">from day one.</span></h2>
+        </div>
+        <ol class="steps">
+          <li data-reveal>
+            <span class="steps__num" aria-hidden="true">1</span>
+            <h3>Tell us about the job</h3>
+            <p>Call, message or send the form — photos help. We'll talk through what you want and arrange a visit.</p>
+          </li>
+          <li data-reveal>
+            <span class="steps__num" aria-hidden="true">2</span>
+            <h3>Site visit &amp; quote</h3>
+            <p>We measure up, talk options and send a clear, itemised quote. No pressure, no obligation.</p>
+          </li>
+          <li data-reveal>
+            <span class="steps__num" aria-hidden="true">3</span>
+            <h3>We build, you relax</h3>
+            <p>Agreed start date, tidy working days, regular updates — and a proper clean-up when we're done.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Service area -->
+    <section class="section areas" id="areas" aria-labelledby="areas-title">
+      <div class="container">
+        <div data-reveal>
+          <p class="eyebrow">Service area</p>
+          <h2 id="areas-title">Proudly building across <span class="accent">Birmingham &amp; the West Midlands.</span></h2>
+          <p class="areas__lede">Based in Birmingham and on site across the region daily. Just outside these areas? Give us a call — we're flexible.</p>
+        </div>
+        <ul class="areas__pills" data-reveal>
+          <li>Birmingham</li>
+          <li>Solihull</li>
+          <li>Sutton Coldfield</li>
+          <li>Walsall</li>
+          <li>Dudley</li>
+          <li>Wolverhampton</li>
+          <li>Coventry</li>
+          <li>West Bromwich</li>
+          <li>Smethwick</li>
+          <li>Kings Norton</li>
+          <li>Moseley</li>
+          <li>Harborne</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Quote form (demo placeholder) -->
+    <section class="section quote" id="quote" aria-labelledby="quote-title">
+      <div class="container quote__inner">
+        <div class="quote__copy" data-reveal>
+          <p class="eyebrow eyebrow--dark">Free quotes</p>
+          <h2 id="quote-title">Tell us about your project. <span class="accent">We'll take it from there.</span></h2>
+          <p>Renovation, extension, new kitchen — send the details and we'll arrange a visit and a clear, itemised quote.</p>
+          <div class="quote__alt">
+            <span>Prefer to talk?</span>
+            <a class="btn btn--primary" href="tel:+447938883718">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9Z"/></svg>
+              07938 883718
+            </a>
+            <a class="quote__email" href="mailto:ctbuildit2@gmail.com">ctbuildit2@gmail.com</a>
+          </div>
+        </div>
+
+        <form class="quote__form" id="quote-form" data-reveal novalidate>
+          <p class="form__demo-tag"><strong>DEMO FORM</strong> — placeholder only, nothing is sent anywhere.</p>
+          <div class="field">
+            <label for="f-name">Name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Your name" required>
+          </div>
+          <div class="field">
+            <label for="f-phone">Phone</label>
+            <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="07XXX XXXXXX" required>
+          </div>
+          <div class="field">
+            <label for="f-service">Service needed</label>
+            <select id="f-service" name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option>Home renovation</option>
+              <option>Extension</option>
+              <option>Kitchen fitting</option>
+              <option>Bathroom fitting</option>
+              <option>Plastering &amp; painting</option>
+              <option>General repairs</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-msg">Project details</label>
+            <textarea id="f-msg" name="message" rows="4" placeholder="Briefly describe the job…"></textarea>
+          </div>
+          <button class="btn btn--primary btn--lg btn--full" type="submit">Request a Free Quote</button>
+          <p class="form__notice" id="form-notice" role="status" hidden>
+            This is a demo form — your message was <strong>not</strong> sent anywhere and no data was collected.
+            To reach C.T Build It, please call <a href="tel:+447938883718">07938 883718</a>.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="brand__text brand__text--light">C.T<small>BUILD IT</small></span>
+        <p>Home renovations, extensions, kitchens and bathrooms across Birmingham and the West Midlands.</p>
+        <a class="footer__phone" href="tel:+447938883718">07938 883718</a><br>
+        <a class="footer__email" href="mailto:ctbuildit2@gmail.com">ctbuildit2@gmail.com</a>
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <strong>Explore</strong>
+        <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#areas">Areas</a>
+        <a href="#quote">Contact</a>
+      </nav>
+      <div class="footer__area">
+        <strong>Service Area</strong>
+        <p>Birmingham &amp; the West Midlands — Solihull, Sutton Coldfield, Walsall, Dudley, Wolverhampton, Coventry &amp; surrounding areas.</p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p class="footer__disclaimer">Unofficial website redesign concept created by <strong>Wahab Codes</strong> (with AI assistance) for demonstration purposes only. Not affiliated with or endorsed by C.T Build It. No data is collected on this page.</p>
+      <p class="footer__copy">© <span id="year">2026</span> C.T Build It — Demo Concept</p>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile call bar -->
+  <div class="callbar">
+    <a class="callbar__btn" href="tel:+447938883718">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9Z"/></svg>
+      <span class="callbar__text"><strong>Ready to start your project?</strong><small>Tap to call 07938 883718</small></span>
+    </a>
+  </div>
+
+</body>
+</html>
